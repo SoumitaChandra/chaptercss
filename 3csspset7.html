@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7 pset 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        padding: 5px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: right;
+      }
+
+      li {
+        list-style: none;
+        display: inline-grid;
+        padding: 0 20px;
+      }
+      header {
+        background-color: crimson;
+        color: beige;
+      }
+      .container {
+        display: grid;
+        /* justify-content: center;*/
+        /*justify-content: space-between;*/
+        background-image: url("imagehtml.jpg");
+        background-repeat: repeat-x;
+        height: 50vh;
+        /*width: 150vw;*/
+      }
+
+      .photo {
+        background-image: url("download.png");
+        height: 10vh;
+        width: 10vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+
+        /*justify-content: last baseline;*/
+      }
+      .glass {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+      }
+      .box1 {
+        background-image: url("face.jpeg");
+        background-size: cover;
+        height: 80vh;
+        width: 30vw;
+      }
+      .box2 {
+        background-image: url("Aehtml.jpg");
+        background-size: cover;
+        height: 80vh;
+        width: 30vw;
+      }
+      .box3 {
+        background-image: url("profile.jpg");
+
+        background-size: cover;
+        height: 80vh;
+        width: 30vw;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="photo"></div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container"></div>
+    <div class="glass">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+    </div>
+  </body>
+</html>
