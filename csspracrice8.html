@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice set 8</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .bar {
+      background-color: chartreuse;
+      height: 3px;
+      animation: ani 1s ease-in-out 0.1s 1;
+    }
+    header {
+      background-color: brown;
+      height: 150px;
+    }
+    main {
+      background-color: cadetblue;
+      height: 860px;
+    }
+    @keyframes ani {
+      0% {
+        width: 0;
+      }
+
+      50% {
+        width: 70vw;
+      }
+
+      100% {
+        width: 100vw;
+      }
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    img {
+      height: 250px;
+      width: 250px;
+      animation: rotate 3s ease-in infinite;
+    }
+    @keyframes slide1 {
+      0% {
+        transform: translate(-8vw);
+      }
+
+      100% {
+        transform: translate(85vw);
+      }
+    }
+
+    @keyframes slide2 {
+      0% {
+        transform: translate(0vw);
+      }
+
+      100% {
+        transform: translate(92vw);
+      }
+    }
+    @keyframes slide3 {
+      0% {
+        transform: translate(8vw);
+      }
+
+      100% {
+        transform: translate(-99vw);
+      }
+    }
+    .slider {
+      background-color: blueviolet;
+      height: 400px;
+      overflow: hidden;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+    .img1 {
+      transform: translate(-8vw);
+      animation: slide1 1s 2s forwards;
+    }
+    .img2 {
+      transform: translate(0vw);
+      animation: slide2 1s 2s forwards;
+    }
+    .img3 {
+      transform: translate(8vw);
+      animation: slide3 1s 2s forwards;
+    }
+  </style>
+  <body>
+    <div class="bar"></div>
+    <header></header>
+    <main>
+      <img src="imagehtml.jpg" />
+      <div class="slider">
+        <img class="img1" src="profile.jpg" />
+        <img class="img2" src="face.jpeg" />
+        <img class ="img3" src ="Aehtml.jpg"
+      </div>
+    </main>
+  </body>
+</html>
